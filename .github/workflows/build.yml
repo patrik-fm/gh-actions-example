@@ -1,0 +1,11 @@
+name: build
+on:
+    push:
+        branches: [main]
+
+jobs:
+    build_web:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: print-working-directory
+            run: pwd
